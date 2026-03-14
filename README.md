@@ -1,7 +1,6 @@
 # AHK Shortcut Manager
 
-A lightweight, portable **AutoHotkey v2** application that transforms a single key on a  keyboard into a powerful multi-action macro button.
-
+A lightweight, portable **AutoHotkey v2** application that transforms a single key on a keyboard into a powerful multi-action macro button.
 
 ---
 
@@ -53,7 +52,7 @@ A built-in graphical interface accessible from the **System Tray** to:
 
 # 🚀 Installation & Setup
 
-To modify the script and use it on any key on your keyboard, follow these steps.
+To modify the script and use any key of your choice, follow these steps.
 
 ---
 
@@ -64,9 +63,10 @@ Install the following tools:
 * **AutoHotkey v2**
   https://www.autohotkey.com/
 
+
 ---
 
-# Step !: Configure the Target Key
+# Step 1: Configure the Target Key
 
 Open **`final.ahk`** and locate this line near the top:
 
@@ -74,23 +74,9 @@ Open **`final.ahk`** and locate this line near the top:
 global targetKey := "NumpadMult"
 ```
 
-Replace `"NumpadMult"` with the name of the key of your choice.
+Replace `"NumpadMult"` with the name of the key your PCB produced when you shorted the pins.
 
 You can find all AutoHotkey key names here: https://www.autohotkey.com/docs/v2/KeyList.htm
-
----
-```
-
-Directory structure example:
-
-```
-ShortcutManager
- ├── ShortcutManager.exe
- ├── config.txt
- ├── settings.ini
- └── audio
-     └── SoundVolumeView.exe
-```
 
 ---
 
@@ -128,18 +114,16 @@ Once compiled, you can delete:
 
 ```
 *.ahk
+*.py
 ```
 
-
-Directory structure:
+Only these files are required to run the app:
 
 ```
-ShortcutManager
- ├── ShortcutManager.exe
- ├── config.txt
- ├── settings.ini
- └── audio
-     └── SoundVolumeView.exe
+ShortcutKey.exe
+config.txt
+settings.ini
+audio/SoundVolumeView.exe
 ```
 
 
@@ -148,7 +132,7 @@ ShortcutManager
 1. Run the compiled:
 
 ```
-ShortcutKey.exe
+ShortcutManager.exe
 ```
 
 2. Locate the **green "H" icon** in the Windows system tray.
