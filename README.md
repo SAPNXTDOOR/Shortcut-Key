@@ -130,13 +130,16 @@ Once compiled, you can delete:
 *.ahk
 ```
 
-Only these files are required to run the app:
+
+Directory structure:
 
 ```
-ShortcutManager.exe
-config.txt
-settings.ini
-audio/SoundVolumeView.exe
+ShortcutManager
+ ├── ShortcutManager.exe
+ ├── config.txt
+ ├── settings.ini
+ └── audio
+     └── SoundVolumeView.exe
 ```
 
 
