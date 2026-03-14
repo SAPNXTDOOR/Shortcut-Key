@@ -1,0 +1,22 @@
+delay|hold|800
+delay|double|500
+; ===============================
+; Format:
+; Key|pressType|actionType|value
+;
+; Press Types:
+; single = Single Press
+; double = Double Press
+; hold   = Hold
+;
+; Action Types:
+; audio = Switch audio device (must match SoundVolumeView Name column)
+; app   = Launch program (exe or protocol like spotify:)
+; url   = Open website
+; macro = Send key sequence (AHK Send syntax)\
+;
+; Key Name - https://www.autohotkey.com/docs/v1/KeyList.htm#function
+; ===============================
+; Delay in ms
+NumpadMult|Single|app|notepad.exe
+NumpadMult|Hold|macro|{LAlt}!{Tab}
